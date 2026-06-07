@@ -1,0 +1,34 @@
+export const metadata = {
+  title: "Sanitization-Driven, Adversarial-Informed Framework for Network Anomaly Detection",
+  description: "A research paper presenting a novel framework for robust network anomaly detection.",
+  date: "2025-11-24",
+};
+
+# Sanitization-Driven, Adversarial-Informed Framework for Network Anomaly Detection
+
+This project was accepted at **eNergetics 2025 (Virtual)**, taking place Nov 24–25, 2025. 
+
+**Co-authors:** Yogesh Sanodiya, Pratik Chouragadey, Soumyajit Ghosh.
+
+## Overview
+
+Network anomaly detection is a critical component of modern cybersecurity, yet many existing machine learning models remain highly vulnerable to adversarial attacks. In this research, we introduce a novel, end-to-end framework designed to build adversarial robustness directly into the anomaly detection pipeline.
+
+Our approach integrates two key strategies:
+1. **Adversarial-Informed Training:** We leverage Generative Adversarial Networks (GANs) to synthesize realistic adversarial network traffic. By training our models on these challenging examples, the system learns to recognize and adapt to sophisticated evasion attempts.
+2. **Data Sanitization:** We employ a robust preprocessing pipeline to clean and normalize network traffic data, reducing the noise and ensuring that feature extraction focuses on the most critical behavioral patterns.
+
+## Technical Architecture
+
+The core of our detection pipeline utilizes a deep autoencoder architecture. The autoencoder is trained to compress and reconstruct normal network traffic. When an anomaly or adversarial packet is encountered, the reconstruction error spikes, signaling a potential threat. 
+
+### Key Components
+
+- **Feature Extraction:** Extracting relevant flow-based and packet-level features.
+- **GAN-based Generation:** Creating synthetic adversarial traffic to fortify the training dataset.
+- **Autoencoder Scoring:** Calculating anomaly scores based on reconstruction loss.
+- **Classical ML baselines:** Comparing our approach against traditional algorithms like Random Forest and SVM.
+
+## Impact
+
+By combining adversarial training with rigorous data sanitization, our framework demonstrates a significant improvement in detecting sophisticated network attacks without sacrificing accuracy on normal traffic. This research pushes the boundaries of adversarial robustness in network security systems.
