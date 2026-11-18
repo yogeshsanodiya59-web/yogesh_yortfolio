@@ -9,6 +9,23 @@ import Link from "next/link";
 const projects = [
   {
     id: 1,
+    title: "RideMatch Engine",
+    type: "distributed systems",
+    description: "A backend-focused distributed system that demonstrates how modern ride-hailing platforms assign nearby drivers within seconds. Instead of recreating an entire ride-booking application, this project focuses on solving the driver matching problem using scalable backend technologies and event-driven architecture. Uses Redis GEO for high-performance geospatial queries and Apache Kafka for asynchronous communication between microservices, enabling fast, loosely coupled driver assignment upon creating ride requests.",
+    image: "/projects/ridematch-engine.png",
+    technologies: [
+      { name: "Java", icon: "", url: "https://www.java.com", iconKey: "Java" },
+      { name: "Spring Boot", icon: "", url: "https://spring.io/projects/spring-boot", iconKey: "SpringBoot" },
+      { name: "Apache Kafka", icon: "", url: "https://kafka.apache.org", iconKey: "Kafka" },
+      { name: "Redis", icon: "", url: "https://redis.io", iconKey: "Redis" },
+    ],
+    github: "https://github.com/yogeshsanodiya59-web/RideMatch-Engine",
+    githubPrivate: false,
+    live: null,
+    livePrivate: true,
+  },
+  {
+    id: 2,
     title: "RTI Generator",
     type: "web app",
     description: "A web-based application that enables users to generate professionally structured Right to Information (RTI) applications by inputting their concerns. Integrated OpenAI API to dynamically generate accurate and well-formatted RTI drafts in both English and Hindi, ensuring accessibility and ease of use. Designed a seamless user interface for input collection and automated document generation.",
@@ -25,7 +42,7 @@ const projects = [
     livePrivate: true,
   },
   {
-    id: 2,
+    id: 3,
     title: "Retina AI",
     type: "deep learning",
     description: "An AI-powered clinical decision support tool that assists doctors in detecting diabetic retinopathy from retinal scans. Implemented image preprocessing and classification using EfficientNet-B3, trained on the APTOS 2019 dataset with a 5-class severity classification approach. Integrated model inference to generate heatmaps on retinal images for better interpretability.",
@@ -42,7 +59,7 @@ const projects = [
     livePrivate: true,
   },
   {
-    id: 3,
+    id: 4,
     title: "Adversarial-Aware ML Pipeline",
     type: "research",
     description: "An end-to-end ML pipeline for network anomaly detection including dataset cleaning, preprocessing, and feature extraction. Engineered a modular pipeline integrating classical machine learning and deep learning approaches. Experimented with GAN-based synthetic traffic generation and autoencoder-based anomaly scoring. Presented as a research-oriented project tied to the accepted paper at eNergetics 2025.",
